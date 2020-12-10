@@ -1,0 +1,68 @@
+{
+  "name": "@panhezeng/live-ffmpeg-rtmp-hls",
+  "version": "1.0.0",
+  "description": "A live project",
+  "keywords": [
+    "live",
+    "ffmpeg",
+    "rtmp",
+    "hls"
+  ],
+  "homepage": "https://github.com/panhezeng/live-ffmpeg-rtmp-hls#readme",
+  "bugs": {
+    "url": "https://github.com/panhezeng/live-ffmpeg-rtmp-hls/issues",
+    "email": "panhezeng@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "潘何增",
+    "email": "panhezeng@gmail.com",
+    "url": "http://apsay.com/"
+  },
+  "contributors": [],
+  "files": [],
+  "main": "node-media-server.js",
+  "browser": "",
+  "bin": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/panhezeng/element-ui-cms.git"
+  },
+  "scripts": {
+    "media:server": "node node-media-server.js",
+    "ffmpeg": "node ffmpeg.js",
+    "html:server": "ws",
+    "killall": "killall node && killall ffmpeg"
+  },
+  "config": {},
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "fluent-ffmpeg": "^2.1.2",
+    "local-web-server": "^4.2.1",
+    "node-media-server": "^2.2.2"
+  },
+  "devDependencies": {
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  },
+  "peerdependencies": {},
+  "engines": {
+    "node": "latest",
+    "npm": "latest"
+  },
+  "private": false,
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,vue,html,css,less,scss,sass,json,md,yml}": [
+      "prettier --write"
+    ]
+  },
+  "browserslist": [
+    "maintained node versions",
+    "not dead",
+    "> 1%",
+    "Firefox ESR"
+  ]
+}
