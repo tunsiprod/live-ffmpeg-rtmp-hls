@@ -1,10 +1,10 @@
 const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
 const ffmpeg = require('fluent-ffmpeg');
-const outputPath = 'rtmp://0.0.0.0/live/test';
+const outputPath = 'rtmp://a.rtmp.youtube.com/live2/rrvp-58tm-yx1c-v45d-0qw6';
 
 ffmpeg()
     .setFfmpegPath(ffmpegPath)
-    .input('0:0')
+    .input('https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8')
     .inputOptions([
         '-f avfoundation',
         '-framerate 30',])
